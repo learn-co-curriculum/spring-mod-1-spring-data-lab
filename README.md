@@ -6,7 +6,7 @@
   Spring Framework.
 - Connect an application to a PostgreSQL database.
 - Create a DTO and `@Entity` class.
-- Create a `@Repository` class.
+- Create a `@Repository` interface.
 - Modify a `@Service` class.
 - Use Postman as an API client tool to test.
 
@@ -19,11 +19,22 @@ Open up pgAdmin4 and create a new database called **gym_db**:
 
 ![create-gym-db](https://curriculum-content.s3.amazonaws.com/spring-mod-1/data-lab/create-gym-db.png)
 
-Open the `lab_setup.sql` file (located in the `resources` directory with the
-`application.properties` file) in the query tool in pgAdmin4. Then execute the
-SQL statements to create the `member` table.
+Notice in the `resources` directory there is a file called `data.sql`:
 
-![create-member-table](https://curriculum-content.s3.amazonaws.com/spring-mod-1/data-lab/create-gym-member-table.png)
+```sql
+DROP TABLE IF EXISTS member;
+
+CREATE TABLE member (
+    id INTEGER PRIMARY KEY,
+    first_name TEXT NOT NULL,
+    last_name TEXT NOT NULL,
+    location TEXT
+);
+```
+
+This file should run automatically when the Spring Boot application starts up,
+so there shouldn't be any need to open this file up in the query tool in
+pgAdmin4.
 
 ## Instructions
 
@@ -112,7 +123,7 @@ following project structure:
     │   │                   └── MemberService.java
     │   └── resources
     │       ├── application.properties
-    │       ├── lab_setup.sql    
+    │       ├── data.sql    
     │       ├── static
     │       └── templates
     └── test
