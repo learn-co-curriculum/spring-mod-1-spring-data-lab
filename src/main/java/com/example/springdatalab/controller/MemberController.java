@@ -1,8 +1,12 @@
 package com.example.springdatalab.controller;
 
+import com.example.springdatalab.dto.MemberDTO;
 import com.example.springdatalab.service.MemberService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import javax.validation.Valid;
 
 @RestController
 public class MemberController {
@@ -29,7 +33,7 @@ public class MemberController {
     }
 
     @PutMapping("/member/{memberId}")
-    public MemberDTO updateMember(@PathVariable Integer memberId, @RequestBody MemberDTO member) {
+    public MemberDTO updateMember(@PathVariable Integer memberId, @Valid @RequestBody MemberDTO member) {
         return memberService.updateMember(memberId, member);
     }
 

@@ -12,9 +12,4 @@ public class SpringDataLabApplication {
 		SpringApplication.run(SpringDataLabApplication.class, args);
 	}
 
-	@Bean
-	public ModelMapper modelMapper() {
-		return new ModelMapper();
-	}
-
 }

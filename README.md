@@ -251,13 +251,15 @@ Request Body:
 }
 ```
 
-![Postman-post-request]()
+![Postman-post-request](https://curriculum-content.s3.amazonaws.com/spring-mod-1/data-lab/postman-add-member.png)
+
+![pgAdmin-add-member](https://curriculum-content.s3.amazonaws.com/spring-mod-1/data-lab/pgadmin-lab-select-1.png)
 
 ### GET Request
 
 Request URL: `http://localhost:8080/member/Traeger`
 
-![Postman-get-request]()
+![Postman-get-request](https://curriculum-content.s3.amazonaws.com/spring-mod-1/data-lab/postman-get-member.png)
 
 ### PUT Request
 
@@ -273,11 +275,14 @@ Request Body:
 }
 ```
 
-![Postman-put-request]()
+![Postman-put-request](https://curriculum-content.s3.amazonaws.com/spring-mod-1/data-lab/postman-update-member.png)
+
+![pgAdmin-update-member](https://curriculum-content.s3.amazonaws.com/spring-mod-1/data-lab/pgadmin-lab-select-2.png)
 
 ### DELETE Request
 
 Request URL: `http://localhost:8080/member/1`
 
-![Potman-delete-request]()
-123456789101112131415161718192021222324252627ac282930313233343536373839404041434
+![Potman-delete-request](https://curriculum-content.s3.amazonaws.com/spring-mod-1/data-lab/postman-delete-member.png)
+
+![pgAdmin-empty-table](https://curriculum-content.s3.amazonaws.com/spring-mod-1/data-lab/pgadmin-delete.png)
