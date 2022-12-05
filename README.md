@@ -146,7 +146,7 @@ gym_db. Remember to enter your password in the password property!
 ```properties
 spring.datasource.url= jdbc:postgresql://localhost:5432/gym_db
 spring.datasource.username= postgres
-spring.datasource.password=
+spring.datasource.password=postgres
 spring.datasource.driver-class-name=org.postgresql.Driver
 
 # Hibernate ddl auto (create, create-drop, validate, update)
